@@ -1,45 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Three Iframes Website</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden;
-        }
+  <title>Website with Iframes</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
 
-        #iframeContainer {
-            display: flex;
-            flex-wrap: wrap;
-            height: 100%;
-        }
+    #iframeContainer {
+      display: flex;
+      height: 100%;
+    }
 
-        #iframe1 {
-            width: 70%;
-            height: 100%;
-            border: none;
-        }
+    #iframe1 {
+      flex: 8;
+      width: 80%;
+      height: 100%;
+      border: none;
+    }
 
-        #iframe2 {
-            width: 30%;
-            height: 30%;
-            border: none;
-        }
-
-        #iframe3 {
-            width: 30%;
-            height: 70%;
-            border: none;
-        }
-    </style>
+    #iframe2 {
+      flex: 2;
+      width: 20%;
+      height: 100%;
+      border: none;
+    }
+  </style>
 </head>
 <body>
-    <div id="iframeContainer">
-        <iframe id="iframe1" src="https://app.watchpubs.com/vVkyj" allowfullscreen frameborder="0"></iframe>
-        <iframe id="iframe2" src="https://player.twitch.tv/?channel=breesknees&parent=koukame.github.io&muted=false" allowfullscreen frameborder="0"></iframe>
-        <iframe id="iframe3" src="https://www.twitch.tv/embed/breesknees/chat?darkpopout&parent=koukame.github.io"></iframe>
-    </div>
+  <div id="iframeContainer">
+    <iframe id="iframe1" src="https://app.watchpubs.com/vVkyj" allowfullscreen frameborder="0"></iframe>
+    <iframe id="iframe2" src="https://player.twitch.tv/?channel=breesknees&parent=koukame.github.io&muted=false" allowfullscreen frameborder="0"></iframe>
+  </div>
 </body>
 </html>
