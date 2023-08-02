@@ -1895,6 +1895,12 @@
       border: none;
     }
 
+    .iframe-sidebar-bottomMobile {
+      border: none;
+      height: 0%;
+      display: none;
+      }
+
     @media (max-width: 767px) {
       .main-container {
         flex-direction: column;
@@ -1915,11 +1921,12 @@
       }
 
       .iframe-sidebar-bottom {
-        height: 70%;
+        display: none;
+        height: 0%;
       }
 
       .iframe-sidebar-bottomMobile {
-        height: 0;
+        height: 70%;
       }
     }
   </style>
