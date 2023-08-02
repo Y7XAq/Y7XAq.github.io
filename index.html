@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Website with Scrollable Iframes</title>
+  <title>Website with Iframes</title>
   <style>
     body, html {
       margin: 0;
@@ -11,36 +11,28 @@
 
     #iframeContainer {
       display: flex;
-      height: 100%;
-      overflow-x: hidden; /* Hide horizontal scrollbar */
-    }
-
-    .iframeWrapper {
-      height: 100%;
-      overflow-y: auto; /* Add vertical scrollbar */
+      height: 100vh; /* Set the height of the container to 100% of the viewport height */
     }
 
     #iframe1 {
       flex: 8;
       width: 80%;
+      height: 100vh; /* Set the height of iframe1 to 100% of the viewport height */
       border: none;
     }
 
     #iframe2 {
       flex: 2;
       width: 20%;
+      height: 100vh; /* Set the height of iframe2 to 100% of the viewport height */
       border: none;
     }
   </style>
 </head>
 <body>
   <div id="iframeContainer">
-    <div class="iframeWrapper">
-      <iframe id="iframe1" src="https://app.watchpubs.com/vVkyj" allowfullscreen frameborder="0"></iframe>
-    </div>
-    <div class="iframeWrapper">
-      <iframe id="iframe2" src="https://player.twitch.tv/?channel=breesknees&parent=koukame.github.io&muted=false" allowfullscreen frameborder="0"></iframe>
-    </div>
+    <iframe id="iframe1" src="https://app.watchpubs.com/vVkyj" allowfullscreen frameborder="0"></iframe>
+    <iframe id="iframe2" src="https://player.twitch.tv/?channel=breesknees&parent=koukame.github.io&muted=false" allowfullscreen frameborder="0"></iframe>
   </div>
 </body>
 </html>
