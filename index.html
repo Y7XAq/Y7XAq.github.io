@@ -1902,21 +1902,24 @@
 
       .iframe-main {
         width: 100%;
-        height: 50%;
+        height: 40%;
       }
 
       .sidebar {
         width: 100%;
-        height: 50%;
+        height: 60%;
       }
 
       .iframe-sidebar-top {
-        height: 100%;
+        height: 30%;
       }
 
       .iframe-sidebar-bottom {
+        height: 70%;
+      }
+
+      .iframe-sidebar-bottomMobile {
         height: 0;
-        display: none;
       }
     }
   </style>
@@ -1925,8 +1928,9 @@
   <div class="main-container">
     <iframe class="iframe-main" src="https://app.watchpubs.com/yZgnk" allowfullscreen="true" frameborder="0"></iframe>
     <div class="sidebar">
-      <iframe class="iframe-sidebar-top" src="https://nightdev.com/hosted/obschat?theme=bttv_dark&channel=dev1&fade=false&bot_activity=false&prevent_clipping=false" allowfullscreen="true" frameborder="0"></iframe>
-      <iframe class="iframe-sidebar-bottom" src="https://nightdev.com/hosted/obschat?theme=bttv_dark&channel=dev1&fade=false&bot_activity=false&prevent_clipping=false" allowfullscreen="true" frameborder="0"></iframe>
+      <iframe class="iframe-sidebar-top" src="https://player.twitch.tv/?channel=dev1&parent=yzgnk.github.io&muted=false" allowfullscreen="true" frameborder="0"></iframe>
+      <iframe class="iframe-sidebar-bottom" src="https://www.twitch.tv/embed/dev1/chat?darkpopout&parent=yzgnk.github.io" allowfullscreen="true" frameborder="0"></iframe>
+      <iframe class="iframe-sidebar-bottomMobile" src="https://nightdev.com/hosted/obschat/?theme=bttv_dark&channel=dev1&fade=false&bot_activity=false&prevent_clipping=false" allowfullscreen="true" frameborder="0"></iframe>
     </div>
   </div>
 </body>
