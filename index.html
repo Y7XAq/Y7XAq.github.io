@@ -9,58 +9,48 @@
       margin: 0;
       padding: 0;
       height: 100%;
+      overflow: hidden;
     }
 
-    .main-container {
-      width: 100%;
-      height: 100%;
-      display: flex;
+    .parent {
+      display: grid;
+      grid-template-columns: 5fr 1fr;
+      grid-template-rows: 5fr 1fr;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      height: 100%; /* Set the height to occupy the entire viewport */
     }
 
     .iframe-main {
-      width: 49%;
+      width: 100%;
       height: 100%;
       border: none;
+      grid-area: 1 / 1 / 3 / 2; /* Updated grid area to span two rows */
     }
 
     .sidebar {
-      width: 51%;
+      width: 100%;
       height: 100%;
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-rows: 30% 70%; /* Adjusting sidebar grid rows */
+      grid-template-columns: 100%; /* Single column for the sidebar */
     }
 
     .iframe-sidebar-top {
       width: 100%;
-      height: 30%;
+      height: 100%;
       border: none;
     }
 
     .iframe-sidebar-bottom {
       width: 100%;
-      height: 70%;
+      height: 100%;
       border: none;
-    }
-
-    /* Media query for small screens */
-    @media (max-width: 768px) {
-      .main-container {
-        flex-direction: column;
-      }
-
-      .iframe-main, .sidebar {
-        width: 100%;
-        height: 500px;
-      }
-
-      .iframe-sidebar-top {
-        height: 1500px;
-      }
     }
   </style>
 </head>
 <body>
-  <div class="main-container">
+  <div class="parent">
     <iframe class="iframe-main" src="https://app.watchpubs.com/vVkyj" allowfullscreen frameborder="0"></iframe>
     <div class="sidebar">
       <iframe class="iframe-sidebar-top" src="https://player.twitch.tv/?channel=breesknees&parent=koukame.github.io&muted=false" allowfullscreen frameborder="0"></iframe>
