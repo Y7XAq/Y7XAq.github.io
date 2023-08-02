@@ -13,28 +13,29 @@
 
     #iframeContainer {
       display: flex;
+      flex-direction: column; /* Change to column */
       height: 100%;
     }
 
     #iframe1 {
-      flex: 8;
-      width: 80%;
-      height: 100%;
+      flex: 2; /* Change flex values */
+      width: 100%; /* Change to 100% */
+      height: 50%; /* Set height to 50% for the first iframe */
       border: none;
     }
 
     #iframe2 {
-      flex: 2;
-      width: 20%;
-      height: 100%;
+      flex: 3; /* Change flex values */
+      width: 100%; /* Change to 100% */
+      height: 50%; /* Set height to 50% for the second iframe */
       border: none;
     }
   </style>
 </head>
 <body>
   <div id="iframeContainer">
-    <iframe id="iframe1" src="https://app.watchpubs.com/9y_Uq" allowfullscreen frameborder="0"></iframe>
     <iframe id="iframe2" src="https://player.twitch.tv/?channel=breesknees&parent=koukame.github.io&muted=false" allowfullscreen frameborder="0"></iframe>
+    <iframe id="iframe1" src="https://app.watchpubs.com/vVkyj" allowfullscreen frameborder="0"></iframe>
   </div>
 </body>
 </html>
