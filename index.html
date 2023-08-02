@@ -16,45 +16,50 @@
       width: 100%;
       height: 100%;
       display: flex;
+      flex-direction: column;
     }
 
-    .iframe-main {
-      width: 49%;
-      height: 100%;
+    .iframe-main, .iframe-sidebar-top, .iframe-sidebar-bottom {
+      width: 100%;
       border: none;
     }
 
     .sidebar {
-      width: 51%;
-      height: 100%;
+      width: 100%;
       display: flex;
       flex-direction: column;
     }
 
     .iframe-sidebar-top {
-      width: 100%;
       height: 30%;
-      border: none;
     }
 
     .iframe-sidebar-bottom {
-      width: 100%;
       height: 70%;
-      border: none;
     }
 
-    /* Media query for phones */
-    @media screen and (max-width: 600px) {
+    /* Media query for phones and smaller devices */
+    @media (max-width: 767px) {
       .main-container {
-        flex-direction: column;
+        flex-direction: row;
       }
 
       .iframe-main {
         width: 100%;
+        height: 49%;
       }
 
       .sidebar {
-        display: none;
+        width: 100%;
+        height: 51%;
+      }
+
+      .iframe-sidebar-top {
+        height: 99%; /* Set the height to 99% to leave 1% for the .iframe-sidebar-bottom */
+      }
+
+      .iframe-sidebar-bottom {
+        height: 1%;
       }
     }
   </style>
