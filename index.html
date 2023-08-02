@@ -1,43 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Website with Iframes</title>
+  <title>Iframe Layout</title>
   <style>
-    body, html {
+    body {
       margin: 0;
       padding: 0;
-      height: 100%;
-    }
-
-    #iframeContainer {
-      display: flex;
-      height: 100%;
+      overflow: hidden;
     }
 
     #iframe1 {
-      width: 80%;
+      width: 49%;
       height: 100%;
-      border: none;
+      float: left;
     }
 
     #iframe2 {
-      width: 20%;
+      width: 51%;
       height: 30%;
-      border: none;
+      float: right;
     }
 
     #twitch-chat-embed {
+      width: 100%;
       height: 70%;
+      clear: both;
     }
   </style>
 </head>
 <body>
-  <div id="iframeContainer">
-    <iframe id="iframe1" src="https://app.watchpubs.com/vVkyj" allowfullscreen frameborder="0"></iframe>
-    <iframe id="iframe2" src="https://player.twitch.tv/?channel=breesknees&parent=koukame.github.io&muted=false" allowfullscreen frameborder="0"></iframe>
-    <iframe id="twitch-chat-embed" src="https://www.twitch.tv/embed/breesknees/chat?darkpopout&parent=koukame.tiiny.site"></iframe>
-  </div>
+  <iframe id="iframe1" src="https://app.watchpubs.com/vVkyj" allowfullscreen frameborder="0"></iframe>
+  <iframe id="iframe2" src="https://player.twitch.tv/?channel=breesknees&parent=koukame.github.io&muted=false" allowfullscreen frameborder="0"></iframe>
+  <iframe id="twitch-chat-embed" src="https://www.twitch.tv/embed/breesknees/chat?darkpopout&parent=koukame.tiiny.site"></iframe>
 </body>
 </html>
