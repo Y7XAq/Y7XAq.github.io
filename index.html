@@ -1895,33 +1895,19 @@
       border: none;
     }
 
-    .iframe-sidebar-bottomMobile {
-      background-color: #131313;
-      border: none;
-      height: 0%;
-      display: none;
-      }
-
     @media (max-width: 600px) {
-      body, html {
-      margin: 0;
-      padding: 0;
-      height: 130vh;
-      width: 100%;
-    }
-      
       .main-container {
         flex-direction: column;
       }
 
       .iframe-main {
         width: 100%;
-        height: 25%;
+        height: 30%;
       }
 
       .sidebar {
         width: 100%;
-        height: 75%;
+        height: 70%;
       }
 
       .iframe-sidebar-top {
@@ -1929,14 +1915,7 @@
       }
 
       .iframe-sidebar-bottom {
-        display: none;
-        height: 0%;
-      }
-
-      .iframe-sidebar-bottomMobile {
         height: 80%;
-        display: flex;
-        background-color: #131313;
       }
     }
   </style>
@@ -1947,7 +1926,6 @@
     <div class="sidebar">
       <iframe class="iframe-sidebar-top" src="https://player.twitch.tv/?channel=dev1&parent=yzgnk.github.io&muted=false" allowfullscreen="true" frameborder="0"></iframe>
       <iframe class="iframe-sidebar-bottom" src="https://www.twitch.tv/embed/dev1/chat?darkpopout&parent=yzgnk.github.io" allowfullscreen="true" frameborder="0"></iframe>
-      <iframe class="iframe-sidebar-bottomMobile" src="https://www.twitch.tv/embed/dev1/chat?darkpopout&parent=yzgnk.github.io" allowfullscreen="true" frameborder="0"></iframe>
     </div>
   </div>
 </body>
